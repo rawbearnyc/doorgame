@@ -1,0 +1,80 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #35613b;
+}
+
+#doorPanel {
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	text-align: center;
+}
+
+#doorPanelWrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 48px;
+	overflow:auto;
+}
+
+#modify {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 0px;
+	left: 40%;
+	right: 40%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	background-color: #423f3b;
+}
+
+.door {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 250px;
+	background-image: url('images/doorclosed.png');
+	/*line-height: 250px;*/
+}
+
+.door p {
+	position: absolute;
+ 	vertical-align: middle; 
+  	text-align: center; 
+  	font-weight: bold;
+  	color: #AAA;
+  	top: 38px;
+  	left: 56px;
+  	right:56px;
+}
+.door.open {
+/*	position: relative;
+	top: 13px;
+*/	background-image: url('images/dooropen.png');
+}
+
+.hidden {
+	display: none;
+}
+
+#modifyDialog {
+	position: absolute;
+	overflow: auto;
+	z-index: 10;
+	top: 25%;
+	bottom: 25%;
+	left: 25%;
+	right: 25%;
+	padding: 10px;
+	background-color: #423f3b;	
+}
+
+#modifyDialog textarea {
+	width: 100%;
+	height: 200px;
+	margin-top: 2em;
+}
